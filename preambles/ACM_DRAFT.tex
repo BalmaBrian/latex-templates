@@ -1,0 +1,29 @@
+% This is a LaTeX preamble file for ACM papers.
+% This file should be used to prepare papers for any ACM.
+% Please note this is a personal preamble file for ACM papers.
+% The requirements for the format are given in this site: https://ai.stanford.edu/~suresh/theory/acmstyle.html#:~:text=Page%20limit%20is%2012%20pages,Here%20is%20the%20copyright%20form.
+% They are as follows:
+%   - 9pt font
+%   - 10pt leading
+%   - 0.33in column separation
+%   - 3.33in textwidth
+%   - 0.75in left, right, and top margins
+%   - 1.00in bottom margin
+%   - 1.00in bottom margin for the first column for ACM Copyright
+%   - no page numbers
+\documentclass[letterpaper,twocolumn,draft]{article}
+\usepackage{times}
+\renewcommand{\normalsize}{\fontsize{9pt}{10pt}\selectfont}
+\setlength{\columnsep}{0.33in}
+\setlength{\textwidth}{3.33in}
+\usepackage[margin=0.75in,top=0.75in,bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{\vspace{1in}}
+\cfoot{}
+\rfoot{}
+\lhead{}
+\chead{}
+\rhead{}
