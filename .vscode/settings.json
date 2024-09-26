@@ -1,0 +1,13 @@
+// Workspace settings
+{
+    "files.exclude": {
+        "templates/*.aux": true,
+        "templates/*.bbl": true,
+        "templates/*.bib": true,
+        "templates/*.fdb_latexmk": true,
+        "templates/*.fls": true,
+        "templates/*.log": true,
+        "templates/*.pdf": true,
+        "templates/*.synctex.gz": true,
+    }
+}
