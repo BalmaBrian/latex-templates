@@ -9,5 +9,6 @@
         "templates/*.log": true,
         "templates/*.pdf": true,
         "templates/*.synctex.gz": true,
+        "templates/*.blg": true,
     }
 }

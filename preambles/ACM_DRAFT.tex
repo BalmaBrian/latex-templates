@@ -11,19 +11,20 @@
 %   - 1.00in bottom margin
 %   - 1.00in bottom margin for the first column for ACM Copyright
 %   - no page numbers
-\documentclass[letterpaper,twocolumn,draft]{article}
+% \documentclass[letterpaper,twocolumn,draft]{article}
 \usepackage{times}
 \renewcommand{\normalsize}{\fontsize{9pt}{10pt}\selectfont}
 \setlength{\columnsep}{0.33in}
 \setlength{\textwidth}{3.33in}
 \usepackage[margin=0.75in,top=0.75in,bottom=1.00in]{geometry}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\lfoot{\vspace{1in}}
-\cfoot{}
-\rfoot{}
-\lhead{}
-\chead{}
-\rhead{}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{\vspace{-0.09in}}[\vspace{-0.09in}]
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{\vspace{-0.09in}}[\vspace{-0.09in}]
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{\vspace{-0.09in}}[\vspace{-0.09in}]
+\usepackage{textcase}
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{1}

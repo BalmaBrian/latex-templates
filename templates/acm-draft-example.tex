@@ -1,0 +1,136 @@
+\documentclass[letterpaper,twocolumn,draft]{article}
+\input{../preambles/ACM_DRAFT.tex}
+\usepackage{url}
+\usepackage{lipsum}
+
+\begin{filecontents}{\jobname.bib}
+@Book{test,
+  author =       {Arpaci-Dusseau, Remzi H. and Arpaci-Dusseau Andrea C.},
+  title =        {Operating Systems: Three Easy Pieces},
+  publisher =    {Arpaci-Dusseau Books, LLC},
+  year =         2015,
+  edition =      {1.00},
+  note =         {\url{http://pages.cs.wisc.edu/~remzi/OSTEP/}}}
+\end{filecontents}
+
+\begin{document}
+% Title with author information section----------------------------------------
+\title{
+    Formatting a Generic ACM Paper:\\
+    An (Incomplete) Example}
+\date{}
+\author{
+    First Author\\
+    First Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Second Author\\
+    Second Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Third Author\\
+    Third Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Fourth Author\\
+    Fourth Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Fifth Author\\
+    Fifth Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Sixth Author\\
+    Sixth Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Seventh Author\\
+    Seventh Author Institution\\
+    City, State ZIP, Country\\
+    email\\
+    \and
+    Eighth Author\\
+    Eighth Author Institution\\
+    City, State ZIP, Country\\
+    email\\}
+\maketitle
+
+% Abstract section-------------------------------------------------------------
+\section*{\MakeUppercase{Abstract}}
+Your abstract text goes here. Just a few facts. Whet our appetites.
+Not more than 200 words, if possible, and preferably closer to 150.
+\lipsum[1-2]
+
+% CCS Concepts-----------------------------------------------------------------
+\section*{\textbf{CCS Concepts}}
+\textbf{
+    $\cdot$ Security and privacy $\rightarrow$ \textit{General and reference};
+    $\cdot$ Human-centered computing $\rightarrow$ \textit{Collaborative and 
+    social computing systems and tools}}
+
+% Keywords---------------------------------------------------------------------
+\section*{\textbf{Keywords}}
+Keywords go here; separated by semicolons; end with a period.
+
+% Introduction section---------------------------------------------------------
+\section{\MakeUppercase{Introduction}}
+A paragraph of text goes here. Lots of text. Plenty of interesting
+text. Text text text text text text text text text text text text text
+text text text text text text text text text text text text text text
+text text text text text text text text text text text text text text
+text text text text text text text.
+More fascinating text. Features galore, plethora of promises.
+
+% Info on CCS & Keywords-------------------------------------------------------
+\section{\MakeUppercase{What are the CCS Concepts \& Keywords?}}
+The ACM Computing Classification System (CCS) is a system that allows authors 
+to classify their work. The CCS is hierarchical, and authors are asked to 
+select the CCS concepts that are most relevant to their work. A full list 
+of CCS concepts and their descriptions can be found at 
+\url{https://dl.acm.org/ccs/ccs_flat.cfm}.
+
+
+Keywords are a list of terms that are relevant to your work. They are used 
+for indexing and searching for your work. A good set of keywords will help 
+others find your work. Keywords should be separated by semicolons and end 
+with a period.
+
+% Sections---------------------------------------------------------------------
+\section{\MakeUppercase{Sections}}
+Sections are numbered, and the numbering is displayed. Top level sections must 
+be in all caps. Subsections are also numbered and displayed. Subsubsections 
+are also numbered and displayed. Subsections \& subsubsections don't need to
+be in all caps.
+
+% Footnotes, Verbatim, and Citations section-----------------------------------
+\section{\MakeUppercase{Footnotes, Verbatim, and Citations}}
+Footnotes should be places after puctuation characters, without any space 
+between side characters and footnotes, like so.
+\footnote{
+    Remember that USENIX format stopped using endnotes and is not using regular
+    footnotes.}
+Ans some embedded literal code may look as follows:
+\begin{verbatim}
+    #include <stdio.h>
+    int main() {
+        printf("Hello, World!\n");
+        return 0;
+    }
+\end{verbatim}
+
+Now we're going to cite some somebody. Watch for the cite tag. Here it comes.
+Arpachi-Desseau and Arpachi-Dusseau coauthored an excellent OS book, which is 
+also really funny~\cite{test}, and Waldsurger got into the 
+SIGOPS hall-of-fame due to his seminal paper about resource management in the
+ESX hypervisor~\cite{test}.
+
+% Bibliography-----------------------------------------------------------------
+\bibliographystyle{plain}
+\bibliography{\jobname}
+\end{document}
